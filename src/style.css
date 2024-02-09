@@ -1,0 +1,22 @@
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+#new-todo-form > * {
+  margin: 0.15rem;
+}
+
+#list {
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item-label:hover,
+[data-list-item-checkbox]:hover {
+  cursor: pointer;
+}
