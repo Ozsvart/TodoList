@@ -20,3 +20,8 @@
 [data-list-item-checkbox]:hover {
   cursor: pointer;
 }
+
+.remarkText {
+  width: 600px;
+  height: 2em;
+}

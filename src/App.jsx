@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TodoItem } from "./TodoItem";
+import { AddRemark } from "./AddRemark";
 import "./style.css";
 
 function App() {
@@ -38,12 +39,14 @@ function App() {
       <ul id="list">
         {todos.map((todo) => {
           return (
-            <TodoItem
-              key={todo.id}
-              {...todo}
-              toggleTodo={toggleTodo}
-              deleteTodo={deleteTodo}
-            />
+            <div>
+              <TodoItem
+                key={todo.id}
+                {...todo}
+                toggleTodo={toggleTodo}
+                deleteTodo={deleteTodo}
+              />
+            </div>
           );
         })}
       </ul>
@@ -59,6 +62,8 @@ function App() {
         <br />
         <button onClick={addTodo}>Add items</button>
       </div>
+      <br />
+      <AddRemark />
     </>
   );
 }
