@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TodoItem } from "./TodoItem";
 import { AddRemark } from "./AddRemark";
+import { List } from "./List";
 import "./style.css";
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         <button onClick={addTodo}>Add items</button>
       </div>
       <br />
+      <List />
       <AddRemark />
     </>
   );
